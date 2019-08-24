@@ -24,7 +24,7 @@ namespace MyVet.Web.Data
             await _dataContext.Database.EnsureCreatedAsync();
             await CheckRoles();
             var manager = await CheckUserAsync("1234", "Joan", "Vargas", "joan.guisao@gmail.com", "350 634 2747", "Calle Luna Calle Sol", "Admin");
-            var customer = await CheckUserAsync("4321", "Sebastina", "Guisao", "sebastian0735@hotmail.com", "350 634 2747", "Calle Luna Calle Sol", "Customer");
+            var customer = await CheckUserAsync("4321", "Sebastian", "Guisao", "sebastian0735@hotmail.com", "350 634 2747", "Calle Luna Calle Sol", "Customer");
             await CheckPetTypesAsync();
             await CheckServiceTypesAsync();
             await CheckOwnerAsync(customer);
